@@ -191,6 +191,7 @@ body::before {
   background: rgba(255, 255, 255, .68); border: 1px solid rgba(255, 255, 255, .9);
 }
 .chip-sm { font-size: .7rem; }
+.chip-star[data-repo]:not([data-stars]) { display: none; }   /* 取不到星标就整颗不显示 */
 .chip-star[data-stars]::after { content: " " attr(data-stars); }
 
 /* ---------------------------------------------------------- 关于 / 联系 */
